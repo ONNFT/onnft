@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="Find Awesome NFT Projects Early!">
+    <meta name="keywords" content="on:nft, onnft, nft today, 오늘의 NFT, NFT 정보, NFT 커뮤니티, NFT 추천, NFT 구매, NFT 거래, 에어드랍, 화이트리스트, 민팅, 이더리움, 폴리곤, 클레이튼, 솔라나">
+    <meta name="author" content="오늘의NFT">
+    <title>오늘의NFT</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#101010">
+    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta property="og:title" content="오늘의NFT">
+    <meta property="og:url" content="https://onnft.today">
+    <meta property="og:image" content="https://imagedelivery.net/PHdjHncNExvZWg7dI3b93A/5004979f-b5df-4f29-a0c5-64e1e5911b00/public">
+    <meta property="og:description" content="Find Awesome NFT Projects Early!">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="오늘의NFT">
+    <meta name="twitter:url" content="https://onnft.today">
+    <meta name="twitter:image" content="https://imagedelivery.net/PHdjHncNExvZWg7dI3b93A/5004979f-b5df-4f29-a0c5-64e1e5911b00/public">
+    <meta name="twitter:description" content="Find Awesome NFT Projects Early!">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Poppins:wght@400;700;900&display=swap">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <script defer src="nfts.js"></script>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="background"></div>
+
+    <div class="background-black"></div>
+
+    <header>
+        <div class="header-wrapper">
+            <div class="logo" onclick="changeURL(0)">ON:NFT</div>
+            <a class="contact" href="#">CONTACT</a>
+        </div>
+        <nav>
+            <div class="nav-menu" onclick="changeURL(0)">메인</div>
+            <div class="nav-menu" onclick="changeURL(1)">민팅</div>
+            <div class="nav-menu" onclick="changeURL(2)">이벤트</div>
+            <div class="nav-menu" onclick="changeURL(3)">커뮤니티</div>
+        </nav>
+    </header>
+
+    <div class="swiper main-banner">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" onclick="changeURL(3)">
+                <img src="https://imagedelivery.net/PHdjHncNExvZWg7dI3b93A/40e6f081-d77d-4f97-c599-13f0babfc900/public" alt="오늘의NFT 런칭 배너이미지">
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <section class="nfts-wrapper">
+    </section>
+    
+    <section class="community-section">
+        <a href="https://open.kakao.com/o/gVYVlfne" target="_blank">카카오톡 오픈채팅</a>
+        <a href="https://twitter.com/onnft_today" target="_blank">트위터</a>
+    </section>
+
+    <footer>
+        <div class="logo" onclick="changeURL(0)">ON:NFT</div>
+        <p>오늘의NFT(onnft.today)는 개별 NFT 프로젝트에 대한 투자 권유를 하지 않습니다. 따라서 NFT의 구매 및 이용 책임은 당사자에게 있으므로 신중한 투자결정을 하시기 바랍니다.</p>
+        <p>Copyright &copy; 2022 오늘의NFT(onnft.today). All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,414 @@
+:root {
+    --color-black: #101010;
+    --color-darkgray: #303030;
+    --color-gray: #808080;
+    --color-lightgray: #e1e1e1;
+    --color-white: #ffffff;
+}
+
+.ogwl{
+    background-color: #4b6584;
+    margin-right: 8px;
+}
+
+.giveaway{
+    background-color: #20bf6b;
+    margin-right: 8px;
+}
+
+.private-sale{
+    background-color: #fa8231;
+    margin-right: 8px;
+}
+
+.public-sale{
+    background-color: #2d98da;
+    margin-right: 8px;
+}
+
+.klaytn{
+    background-image: linear-gradient(135deg, #ff8800, #f6142b);
+}
+
+.ethereum{
+    background-image: linear-gradient(135deg, #8992b1, #454a74);
+}
+
+.polygon{
+    background-color: #8347e5;
+}
+
+.solana{
+    background-image: linear-gradient(135deg, #00ffa2, #db1fff);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+    overflow-y: scroll;
+}
+
+.background{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='40' height='69.282' patternTransform='scale(3) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(0, 0%, 6%, 1)'/><path d='M13.333-3.849v23.094M6.667-15.396l20 11.547M13.333-19.245l20 11.547M20 0v23.094m20-34.641l-6.667 3.849-6.666 3.849L20 0M0-11.547l6.667 3.849 6.666 3.849L20 0m0-23.094l20 11.547v23.094L20 23.094l-6.667-3.849-6.666-3.849L0 11.547v-23.094l6.667-3.849 6.666-3.849zM40-3.769L20 7.698m20-3.849l-16.253 9.384L20 15.396M6.667-7.698v23.094m6.666 50.037v23.094M6.667 53.886l20 11.547M13.333 50.037l20 11.547M20 69.282v23.094m20-34.641l-6.667 3.849-6.666 3.849L20 69.282M0 57.735l6.667 3.849 6.666 3.849L20 69.282m0-23.094l20 11.547v23.094L20 92.376l-6.667-3.849-6.666-3.849L0 80.829V57.735l6.667-3.849 6.666-3.849zm20 19.325L20 76.98m20-3.849L20 84.678M6.667 61.584v23.094m26.666-53.886v23.094m-6.666-34.641l20 11.547M33.333 15.396l20 11.547M40 34.641v23.094m20-34.641l-6.667 3.849-6.666 3.849L40 34.641M20 23.094l6.667 3.849 6.666 3.849L40 34.641m0-23.094l20 11.547v23.094L40 57.735l-6.667-3.849-6.666-3.849L20 46.188V23.094l6.667-3.849 6.666-3.849zm20 19.325L40 42.339m20-3.849L40 50.037M26.667 26.943v23.094M-6.667 30.792v23.094m-6.666-34.641l20 11.547M-6.667 15.396l20 11.547M0 34.641v23.094m20-34.641l-6.667 3.849-6.666 3.849L0 34.641m-20-11.547l6.667 3.849 6.666 3.849L0 34.641m0-23.094l20 11.547v23.094L0 57.735l-6.667-3.849-6.666-3.849L-20 46.188V23.094l6.667-3.849 6.666-3.849zm20 19.325L0 42.339m20-3.849L0 50.037m-13.333-23.094v23.094'  stroke-width='0.5' stroke='hsla(0, 0%, 9%, 1)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    z-index: -2;
+}
+
+.background-black{
+    position: fixed;
+    max-width: 620px;
+    min-height: 100vh;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-black);
+    z-index: -1;
+
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 620px;
+    width: 100%;
+    height: 100px;
+    background-color: var(--color-black);
+}
+
+.header-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.logo{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    color: var(--color-white);
+    cursor: pointer;
+}
+
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 84px;
+    height: 28px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 700;    
+    color: var(--color-black);
+    background-color: var(--color-white);
+    border-radius: 14px;
+    border: none;
+}
+
+nav{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    width: 100%;
+    height: 40px;
+}
+
+nav > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--color-gray);
+    padding-left: 16px;
+    padding-right: 16px;
+    cursor: pointer;
+    transition: 0.5s all;
+}
+
+nav > div:hover{
+    color: var(--color-white);
+}
+
+.nav-selected{
+    color: var(--color-white);
+    border-bottom: 1px solid var(--color-white);
+}
+
+.main-banner{
+    max-width: 620px;
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-wrapper{
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide{
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-pagination-bullet { 
+    width: 8px; 
+    height: 8px; 
+    background: transparent;
+    border: 1px solid var(--color-black); 
+}
+
+.swiper-pagination-bullet-active { 
+    width: 8px; 
+    height: 8px; 
+    background: var(--color-black); 
+    border: 1px solid var(--color-black); 
+}
+
+.nfts-wrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 16px;
+    max-width: 620px;
+    width: 100%;
+    height: 100%;
+    padding-top: 32px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 16px;
+    background-color: var(--color-black);
+}
+
+.nft-wrapper{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 128px;
+    border: 1px solid var(--color-darkgray);
+    background-color: var(--color-black);
+    border-radius: 4px;
+    padding: 16px;
+    transition: 0.5s all;
+}
+
+.nft-wrapper:hover{
+    border: 1px solid var(--color-lightgray);
+    background-color: var(--color-white);
+    box-shadow: 0px 0px 16px var(--color-lightgray);
+}
+
+.nft-wrapper:hover > hr{
+    background-color: var(--color-lightgray);
+}
+
+.nft-wrapper:hover > .nft-info > .nft-title{
+    color: var(--color-darkgray);
+}
+
+.nft-wrapper > img{
+    width: 96px;
+    height: 96px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.nft-wrapper > hr{
+    width: 1px;
+    height: 100%;
+    margin-left: 16px;
+    margin-right: 16px;
+    border: none;
+    background-color: var(--color-darkgray);
+    transition: 0.5s all;
+}
+
+.nft-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+    padding-top: 4px;
+    padding-bottom: 2px;
+}
+
+.nft-tag{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.nft-tag > div{
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 700;    
+    color: var(--color-white);
+    border-radius: 2px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.nft-title{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 18px;
+    font-weight: 700;    
+    color: var(--color-white);
+    padding-top: 2px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    word-wrap: break-word;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    transition: 0.5s all;
+}
+
+.nft-date{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--color-gray);
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    word-wrap: break-word;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.community-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 620px;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-black);
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 32px;
+    padding-bottom: 16px;
+}
+
+.community-section > a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 48px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 4px;
+    border: none;
+    padding-bottom: 2px;
+    cursor: pointer;
+}
+
+.community-section > a:nth-of-type(1){
+    background-color: #F7E600;
+    color: #3A1D1D;
+    margin-bottom: 16px;
+}
+
+.community-section > a:nth-of-type(2){
+    background-color: #00acee;
+    color: var(--color-white);
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    max-width: 620px;
+    width: 100%;
+    background-color: var(--color-black);
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 64px;
+    padding-bottom: 32px;
+}
+
+footer > p:nth-of-type(1){
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--color-gray);
+    margin-top: 32px;
+    word-break: keep-all;
+}
+
+footer > p:nth-of-type(2){
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--color-white);
+    margin-top: 16px;
+    word-break: keep-all;
+}
+
+
+@media screen and (max-width: 620px) {
+
+    body{
+        -ms-overflow-style: none;
+    }
+    
+    ::-webkit-scrollbar {
+        display: none;
+    }
+    
+    .nft-wrapper > img{
+        display: none;
+    }
+
+    .nft-wrapper > hr{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    body{
+        width: 360px;
+    }
+
+    .background{
+        width: 360px;
+    }
+
+}
+
