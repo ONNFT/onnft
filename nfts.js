@@ -294,7 +294,7 @@ nftList = [
     end: "2022. 6. 30. 14:00",
     title: "The Friendly Giants 에어드랍 이벤트",
     project: "The Friendly Giants",
-    stage: "Giveawy",
+    stage: "Giveaway",
     blockchain: "Solana",
     src: "https://imagedelivery.net/PHdjHncNExvZWg7dI3b93A/0dcb4cd1-fc0a-4587-cbd5-f2303a102d00/public",
     url: "https://twitter.com/goodfriend0906/status/1541652214803927042?cxt=HHwWhMCo6a6hhuUqAAAA",
