@@ -180,16 +180,6 @@ nftList = [
     url: "https://twitter.com/AR2022PROJECT/status/1541278019787976704",
   },
   {
-    start: "2022. 6. 4. 00:01",
-    end: "2022. 7. 31. 23:59",
-    title: "컬러매직 에어드랍 공모전",
-    project: "Colormagic_taste",
-    stage: "Giveaway",
-    blockchain: "Klaytn",
-    src: "https://pbs.twimg.com/media/FWU9c6laMAAUWgo?format=jpg&name=medium",
-    url: "https://linktr.ee/colormaon",
-  },
-  {
     start: "2022. 6. 28. 20:30",
     end: "2022. 7. 1. 20:30",
     title: "AzukiArt Sakura 무료 민팅 WL 이벤트",
