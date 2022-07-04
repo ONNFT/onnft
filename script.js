@@ -45,6 +45,16 @@ window.addEventListener("load", function () {
 function changeURL(num) {
   urlSearch = new URLSearchParams(location.search);
 
+  if (num == 0 && urlSearch.get("page") == null) {
+    return;
+  } else if (num == 1 && urlSearch.get("page") == "minting") {
+    return;
+  } else if (num == 2 && urlSearch.get("page") == "event") {
+    return;
+  } else if (num == 3 && urlSearch.get("page") == "community") {
+    return;
+  }
+
   switch (num) {
     case 0:
       urlSearch.delete("page");
@@ -160,9 +170,11 @@ function loadNFTs() {
         break;
     }
 
+    /**
     let el_blockchain = document.createElement("div");
     el_blockchain.innerHTML = nftDatas[i].blockchain;
     el_blockchain.setAttribute("class", nftDatas[i].blockchain.toLowerCase());
+     */
 
     let el_title = document.createElement("div");
     el_title.setAttribute("class", "nft-title");
@@ -173,7 +185,7 @@ function loadNFTs() {
     el_date.innerHTML = nftDatas[i].start + " ~ " + nftDatas[i].end;
 
     el_tag.appendChild(el_stage);
-    el_tag.appendChild(el_blockchain);
+    // el_tag.appendChild(el_blockchain);
 
     el_info.appendChild(el_tag);
     el_info.appendChild(el_title);
