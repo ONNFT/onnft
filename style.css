@@ -17,7 +17,7 @@
 }
 
 .private-sale{
-    background-color: #fa8231;
+    background-color: #9b59b6;
     margin-right: 8px;
 }
 
@@ -26,22 +26,13 @@
     margin-right: 8px;
 }
 
-.klaytn{
-    background-image: linear-gradient(135deg, #ff8800, #f6142b);
+.new{
+    background-color: #f1c40f;
 }
 
-.ethereum{
-    background-image: linear-gradient(135deg, #8992b1, #454a74);
+.hot{
+    background-color: #e74c3c;
 }
-
-.polygon{
-    background-color: #8347e5;
-}
-
-.solana{
-    background-image: linear-gradient(135deg, #00ffa2, #db1fff);
-}
-
 
 * {
     margin: 0;

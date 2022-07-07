@@ -170,11 +170,25 @@ function loadNFTs() {
         break;
     }
 
-    /**
-    let el_blockchain = document.createElement("div");
-    el_blockchain.innerHTML = nftDatas[i].blockchain;
-    el_blockchain.setAttribute("class", nftDatas[i].blockchain.toLowerCase());
-     */
+    let el_importance = document.createElement("div");
+    let date_start = new Date(nftDatas[i].start);
+    let date_end = new Date(nftDatas[i].end);
+
+    if (
+      date_end.getFullYear() == new Date().getFullYear() &&
+      date_end.getMonth() == new Date().getMonth() &&
+      date_end.getDate() == new Date().getDate()
+    ) {
+      el_importance.setAttribute("class", "hot");
+      el_importance.innerHTML = "HOT";
+    } else if (
+      date_start.getFullYear() == new Date().getFullYear() &&
+      date_start.getMonth() == new Date().getMonth() &&
+      date_start.getDate() == new Date().getDate()
+    ) {
+      el_importance.setAttribute("class", "new");
+      el_importance.innerHTML = "NEW";
+    }
 
     let el_title = document.createElement("div");
     el_title.setAttribute("class", "nft-title");
@@ -185,7 +199,7 @@ function loadNFTs() {
     el_date.innerHTML = nftDatas[i].start + " ~ " + nftDatas[i].end;
 
     el_tag.appendChild(el_stage);
-    // el_tag.appendChild(el_blockchain);
+    el_tag.appendChild(el_importance);
 
     el_info.appendChild(el_tag);
     el_info.appendChild(el_title);
