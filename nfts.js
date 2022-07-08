@@ -188,4 +188,13 @@ nftList = [
     src: "https://imagedelivery.net/PHdjHncNExvZWg7dI3b93A/1ac68266-2f0f-4395-e721-56b7c6425900/public",
     url: "https://gleam.io/6NO8i/hahiho-x-metakami-wl-",
   },
+  {
+    start: "2022. 7. 7. 20:00",
+    end: "2022. 7. 10. 23:59",
+    title: "GAEGUNEEZ 2차 민팅",
+    project: "GAEGUNEEZ",
+    stage: "Public Sale",
+    src: "https://imagedelivery.net/PHdjHncNExvZWg7dI3b93A/ed05899a-d3c6-4d88-4807-c5b1c1d41700/public",
+    url: "https://twitter.com/gaeguneez/status/1544291407258476544",
+  },
 ];
