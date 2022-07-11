@@ -149,7 +149,7 @@ nftList = [
     title: "MBRC 경쟁 화이트리스트 민팅",
     project: "MBRC",
     stage: "Private Sale",
-    src: "https://imagedelivery.net/PHdjHncNExvZWg7dI3b93A/573d81d9-8003-4608-8f26-8edb38205200/publicc",
+    src: "https://imagedelivery.net/PHdjHncNExvZWg7dI3b93A/573d81d9-8003-4608-8f26-8edb38205200/public",
     url: "https://twitter.com/MarineBlues_RC/status/15463094204847267844",
   },
   {
