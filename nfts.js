@@ -185,7 +185,7 @@ nftList = [
     title: "Ape Night Club 화이트리스트 이벤트",
     project: "Ape Night Club",
     stage: "OG WL",
-    src: "https://imagedelivery.net/PHdjHncNExvZWg7dI3b93A/d383b1e6-5116-4406-06aa-4f202c519c00/publicc",
+    src: "https://imagedelivery.net/PHdjHncNExvZWg7dI3b93A/d383b1e6-5116-4406-06aa-4f202c519c00/public",
     url: "https://gleam.io/yDA4F/apenightclubb",
   },
   {
