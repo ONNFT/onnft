@@ -158,7 +158,7 @@ nftList = [
     title: "Hnomics 화이트리스트 민팅",
     project: "Hnomics",
     stage: "Private Sale",
-    src: "https://imagedelivery.net/PHdjHncNExvZWg7dI3b93A/27895cd9-2c51-427a-61f8-dd9757f24c00/publicc",
+    src: "https://imagedelivery.net/PHdjHncNExvZWg7dI3b93A/27895cd9-2c51-427a-61f8-dd9757f24c00/public",
     url: "https://twitter.com/Hnomics1/status/1546421278591963136?cxt=HHwWgMCi-bT9_vUqAAAA",
   },
   {
